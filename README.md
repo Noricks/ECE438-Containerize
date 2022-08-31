@@ -25,7 +25,7 @@ Note: this is not a production image and is not optimized for size.
 3. Containers can access the host. The host is at `172.17.0.1`.
 4. On Linux hosts, the host can access the container with their IPs. On Mac and Windows hosts, the host cannot access the containers.
 
-## Usage.
+## Usage of Powershell Scripts
 0. Install Docker
 1. Clone the repository
 2. Clone your ECE 438 repository into the `repo/` folder.
@@ -33,7 +33,19 @@ Note: this is not a production image and is not optimized for size.
    - `Start-Container` Start a container. (You may want multiple containers.) Containers are numbered with IDs
    - `Attach-Container` Attach to the console of a container for various operations.
      - Cannot attach to a stopped container.
-     - Do not use `exit` or `logout` to detach. Use `Ctrl-P Ctrl-Q`.
+     - Do not use `exit` or `logout` to detach. Use `Ctrl-P + Ctrl-Q`.
    - `Stop-AllContainers` to stop all ECE438 containers.
    - `Remove-AllContainers` to remove all ECE438 containers.  
 4. You will be dropped into `/repo` in the containers. Use `ls` to discover your code.
+
+## Usage of Python Scripts
+
+0. Install Docker and run `python3 command.py --install` to create image
+1. Clone your ECE 438 repository into the `repo/` folder.
+2. Use the scripts.
+   - `python3 command.py --start ContainerID` Start a container. (You may want multiple containers.) Containers are numbered with IDs
+   - `python3 command.py --attach ContainerID` Attach to the console of a container for various operations.
+     - Cannot attach to a stopped container.
+     - Do not use `exit` or `logout` to detach. Use `Ctrl-P + Ctrl-Q`.
+   - `python3 command.py --stop_all` to stop all ECE438 containers.
+   - `python3 command.py --remove_all` to remove all ECE438 containers.  
