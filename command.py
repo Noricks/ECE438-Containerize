@@ -52,7 +52,7 @@ def start(opt):
     pwd = pwd[:-1]
     
     # container_id
-    container_id_cmd = f'docker run -itd --name ece438-{id} --hostname ece438-{id} -p {ssh_portassign}:22 -v {pwd}/repo:/repo {image_name}'
+    container_id_cmd = f'docker run -itd --name ece438-{id} --hostname ece438-{id} -p {ssh_portassign}:22 -v \"{pwd}/repo:/repo\" {image_name}'
     with os.popen(container_id_cmd) as p:
         container_id = p.read()
     
