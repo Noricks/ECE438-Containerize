@@ -42,9 +42,10 @@ Note: this is not a production image and is not optimized for size.
 # ECE 438 containerized (Native Updated by Noricks)
 
 ## Info
-- This repository is forked from [Metric-Void/ECE438-Containerize](https://github.com/Metric-Void/ECE438-Containerize).
+- This repository is forked from [Metric-Void/ECE438-Containerize](https://github.com/Metric-Void/ECE438-Containerize) for platforms with python to run.
 - Provide native python scripts (python >= 3.6), which are re-write from Metric-Void's PowerShell scripts.
 - Modified `ubuntu:16.04` to `ubuntu:22.04` to align with this year's requirement and one missing package.
+- Provided auto docker image build
 - This repo may update as the course/MPs progress.
 - Welcome for comments and issues.
 
