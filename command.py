@@ -97,8 +97,6 @@ if __name__ == '__main__':
     
     if (opt.list_all):
         print(list_all(opt))
-        # for i in list_all(opt):
-            # print(i)
 
     if (opt.stop_all):
         stop_all(opt)

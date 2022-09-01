@@ -38,9 +38,20 @@ Note: this is not a production image and is not optimized for size.
    - `Remove-AllContainers` to remove all ECE438 containers.  
 4. You will be dropped into `/repo` in the containers. Use `ls` to discover your code.
 
-## Usage of Python Scripts
 
-0. Install Docker and run `python3 command.py --install` to create image
+# ECE 438 containerized (Native Updated by Noricks)
+
+## Info
+- This repository is forked from [Metric-Void/ECE438-Containerize](https://github.com/Metric-Void/ECE438-Containerize).
+- Provide native python scripts (python >= 3.6), which are re-write from Metric-Void's PowerShell scripts.
+- Modified `ubuntu:16.04` to `ubuntu:22.04` to align with this year's requirement and one missing package.
+- This repo may update as the course/MPs progress.
+- Welcome for comments and issues.
+
+## WARNING: these updates are not checked with TAs yet
+
+## Usage of Python Scripts
+0. Install Docker and run `python3 command.py --install` to create the image
 1. Clone your ECE 438 repository into the `repo/` folder.
 2. Use the scripts.
    - `python3 command.py --start ContainerID` Start a container. (You may want multiple containers.) Containers are numbered with IDs
@@ -48,4 +59,8 @@ Note: this is not a production image and is not optimized for size.
      - Cannot attach to a stopped container.
      - Do not use `exit` or `logout` to detach. Use `Ctrl-P + Ctrl-Q`.
    - `python3 command.py --stop_all` to stop all ECE438 containers.
-   - `python3 command.py --remove_all` to remove all ECE438 containers.  
+   - `python3 command.py --remove_all` to remove all ECE438 containers.
+3. You will be dropped into `/repo` in the containers. Use `ls` to discover your code.  
+
+## Note
+- I personally recommend using [Portainer](https://docs.portainer.io/v/ce-2.9/start/install/server/docker/linux) to manage the containers and images if you do not want to install Docker Desktop.
